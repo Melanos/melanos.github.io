@@ -5,8 +5,7 @@ title: Services | Igor Matsenko
 
 # Professional Services
 
-Leveraging 8+ years of experience in enterprise IT operations, I provide specialized consulting and implementation services across network engineering, automation, and AI-driven solutions.
-
+Leveraging 11+ years of experience in enterprise IT operations and local consulting, I specialize in AI-driven automation solutions, AIOps implementation, and enterprise workflow optimization. My background includes extensive network infrastructure consulting work throughout Northeast Ohio.
 ---
 
 ## AI & Intelligent Automation
@@ -32,6 +31,8 @@ Leveraging 8+ years of experience in enterprise IT operations, I provide special
 ---
 
 ## Network Engineering & Infrastructure
+
+**Note:** While my current focus is on AI/automation consulting, I have extensive background in network infrastructure from years of local consulting work installing and configuring network equipment throughout Northeast Ohio.
 
 ### Network Design & Optimization
 - Enterprise campus and data center network architecture
@@ -140,7 +141,7 @@ Customized training programs:
 
 ## Why Work With Me?
 
-✓ **Proven Track Record** - 8+ years supporting 24/7 enterprise environments at Fortune 500 companies
+✓ **Proven Track Record** - 11+ years supporting 24/7 enterprise environments at Fortune 500 companies
 
 ✓ **Full-Stack Expertise** - From network infrastructure to AI/ML integration
 
