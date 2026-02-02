@@ -294,7 +294,7 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
             <TechStack />
             <Resume />
             <SocialLink
-              href="https://www.instagram.com/igor.matsenko/#"
+              href="https://www.instagram.com/nekapb_6yjio4ek/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
