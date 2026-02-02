@@ -288,8 +288,6 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
-            <TechStack />
-            <Resume />
             <SocialLink
               href="https://www.instagram.com/nekapb_6yjio4ek/"
               aria-label="Follow on Instagram"
@@ -317,6 +315,7 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <TechStack />
             <Newsletter />
             <Resume />
             <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
