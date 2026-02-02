@@ -41,27 +41,43 @@ export const metadata = {
 export default function Conferences() {
   const attendedConferences = [
     {
-      name: 'Microsoft Ignite 2025',
-      date: 'November 2025',
+      name: 'Splunk .conf25',
+      date: 'June 2025',
       description:
-        'Attended sessions on Microsoft Copilot Studio, Power Automate enterprise features, and Azure AI services. Networked with enterprise automation professionals and explored latest developments in AI-powered workflow automation.',
-      link: 'https://ignite.microsoft.com/',
+        'Attended premier Splunk conference covering latest developments in observability, security, and AIOps. Explored advanced use cases for Splunk in enterprise environments and networked with data analytics professionals.',
+      link: 'https://conf.splunk.com/',
       role: 'Attendee',
     },
     {
-      name: 'PyCon US 2025',
+      name: 'Red Hat Summit 2025',
       date: 'May 2025',
       description:
-        'Participated in workshops on Python automation frameworks, enterprise integration patterns, and AI/ML model deployment. Connected with the Python community to discuss automation best practices.',
+        'Participated in sessions on Red Hat Ansible Automation Platform, OpenShift, and hybrid cloud strategies. Learned about enterprise automation and container orchestration best practices.',
+      link: 'https://www.redhat.com/en/summit',
+      role: 'Attendee',
+    },
+    {
+      name: 'Cisco Live 2024',
+      date: 'June 2024',
+      description:
+        'Attended deep-dive sessions on Cisco networking technologies, network automation, and SD-WAN. Participated in hands-on labs and connected with network engineering professionals.',
+      link: 'https://www.ciscolive.com/',
+      role: 'Attendee',
+    },
+    {
+      name: 'PyCon US 2024',
+      date: 'May 2024',
+      description:
+        'Participated in workshops on Python automation frameworks, enterprise integration patterns, and best practices for building scalable automation tools. Connected with the Python community.',
       link: 'https://us.pycon.org/',
       role: 'Attendee',
     },
     {
-      name: 'AnsibleFest 2024',
-      date: 'October 2024',
+      name: 'Autocon 2',
+      date: '2024',
       description:
-        'Deep dive into Ansible automation platform, network automation, and infrastructure as code. Learned advanced techniques for enterprise-scale automation deployments.',
-      link: 'https://www.ansible.com/ansiblefest',
+        'Attended conference focused on network automation, infrastructure as code, and modern DevOps practices. Learned about cutting-edge automation tools and methodologies for enterprise networks.',
+      link: 'https://www.packetcoders.io/autocon-2/',
       role: 'Attendee',
     },
   ]
