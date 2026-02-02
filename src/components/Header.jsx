@@ -14,7 +14,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import companyLogo from '@/images/logos/company_logo.png'
+import companyLogo from '@/images/logos/logo.png'
 
 function CloseIcon(props) {
   return (
@@ -213,11 +213,16 @@ function Avatar({ large = false, className, ...props }) {
     >
       <Image
         src={companyLogo}
-        alt="IM Logo"
+        alt=""
+        sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
-          'object-contain',
-          large ? 'h-12 w-auto' : 'h-8 w-auto',
+          'rounded-full object-cover',
+          large ? 'h-16 w-16' : 'h-9 w-9',
         )}
+        style={{ 
+          backgroundColor: 'transparent',
+          mixBlendMode: 'multiply'  // This helps blend the white background
+        }}
         priority
       />
     </Link>
