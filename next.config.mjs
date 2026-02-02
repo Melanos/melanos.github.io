@@ -6,9 +6,10 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   outputFileTracingIncludes: {
-    '/articles/*': ['./src/app/articles/**/*.mdx'],
+    '/articles/**': ['./src/app/articles/**/*.mdx'],
   },
-    eslint: { ignoreDuringBuilds: true },
+  eslint: { ignoreDuringBuilds: true },
+  output: 'export',
 }
 
 const withMDX = nextMDX({
