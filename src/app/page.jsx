@@ -263,12 +263,9 @@ function Photos() {
               rotations[imageIndex % rotations.length],
             )}
           >
-            <Image
+            <img
               src={imageSrc}
               alt=""
-              width={288}
-              height={320}
-              sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
