@@ -188,10 +188,7 @@ function Resume() {
       title: 'IT Systems Engineer Lead - Network Project Engineering',
       logo: logoProgressive,
       start: '2023',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      end: '2025',
     },
     {
       company: 'Progressive Insurance',
