@@ -175,20 +175,30 @@ function Resume() {
   let resume = [
     {
       company: 'Progressive Insurance',
-      title: 'IT DevOps Eng. Lead – AIOps & GenAI',
+      title: 'IT DevOps Eng. Lead - AI/AIOps',
       logo: logoProgressive,
-      start: '2020',
+      start: '2025',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'ETS',
-      title: 'AI Engineer',
+      company: 'Progressive Insurance',
+      title: 'IT Systems Engineer Lead - Network Project Engineering',
       logo: logoProgressive,
-      start: '2018',
-      end: '2020',
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'Progressive Insurance',
+      title: 'Senior IT System Engineer - Network Engineering',
+      logo: logoProgressive,
+      start: '2022',
+      end: '2023',
     },
   ]
 
