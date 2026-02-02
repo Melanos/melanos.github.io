@@ -7,8 +7,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-// Using public folder for static export
-const portraitImage = '/images/image-3.jpg'
+import portraitImage from '@/images/photos/image-3.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
