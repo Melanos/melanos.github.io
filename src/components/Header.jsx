@@ -14,7 +14,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+// import avatarImage from '@/images/avatar.jpg' // Removed - placeholder avatar
 
 function CloseIcon(props) {
   return (
@@ -211,16 +211,15 @@ function Avatar({ large = false, className, ...props }) {
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
-      <Image
-        src={avatarImage}
-        alt=""
-        sizes={large ? '4rem' : '2.25rem'}
+      {/* Avatar image removed - add your own professional photo here */}
+      <div
         className={clsx(
-          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
-          large ? 'h-16 w-16' : 'h-9 w-9',
+          'rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white font-bold dark:from-teal-500 dark:to-teal-700',
+          large ? 'h-16 w-16 text-2xl' : 'h-9 w-9 text-sm',
         )}
-        priority
-      />
+      >
+        IM
+      </div>
     </Link>
   )
 }

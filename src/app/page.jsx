@@ -7,6 +7,7 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
+  InstagramIcon,
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
@@ -140,28 +141,7 @@ function Newsletter() {
   )
 }
 
-function Resume() {
-  let resume = [
-    {
-      company: 'Progressive',
-      title: 'Enterprise Automation Engineer',
-      logo: logoProgressive,
-      start: '2020',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
-    },
-    {
-      company: 'Progressive',
-      title: 'AI Engineer',
-      logo: logoProgressive,
-      start: '2018',
-      end: '2020',
-    },
-  ]
-
-  function TechStack() {
+function TechStack() {
   const technologies = [
     { name: 'Python', logo: logoPython },
     { name: 'Ansible', logo: logoAnsible },
@@ -191,6 +171,26 @@ function Resume() {
   )
 }
 
+function Resume() {
+  let resume = [
+    {
+      company: 'Progressive',
+      title: 'Enterprise Automation Engineer',
+      logo: logoProgressive,
+      start: '2020',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'Progressive',
+      title: 'AI Engineer',
+      logo: logoProgressive,
+      start: '2018',
+      end: '2020',
+    },
+  ]
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">

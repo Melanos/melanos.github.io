@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoProgressive from '@/images/logos/progressive-3.svg'
+import logoPython from '@/images/logos/python.svg'
+import logoAnsible from '@/images/logos/ansible.svg'
+import logoSplunk from '@/images/logos/splunk.svg'
+import logoCisco from '@/images/logos/cisco-2.svg'
 
 const projects = [
   {
@@ -14,35 +14,35 @@ const projects = [
     description:
       'Enterprise-scale AI agent built with Microsoft Copilot Studio and Power Automate that intelligently routes and responds to thousands of email requests. Achieves 94%+ accuracy in incident classification with human-in-the-loop workflow design, reducing response times by 50-60% and automating 60% of routine requests.',
     link: { href: '#', label: 'Progressive Insurance' },
-    logo: logoPlanetaria,
+    logo: logoProgressive,
   },
   {
     name: 'Network Access Control (NAC) Automation',
     description:
       'Python-based automation framework leveraging multithreading to deploy Network Access Control across 800+ switches and 34,800 ports. Estimated savings of 1,000+ engineering hours through intelligent automation, automated notifications to Microsoft Teams, and standardized configuration management.',
     link: { href: '#', label: 'Python + Ansible' },
-    logo: logoAnimaginary,
+    logo: logoPython,
   },
   {
     name: 'Self-Service ACL Playbook',
     description:
       'Ansible automation platform playbook enabling test servers to perform printer testing through self-service ACL updates. Features scheduling constraints for execution outside business hours, change request integration, and automated deployment via Ansible Automation Platform (AAP).',
     link: { href: '#', label: 'Ansible AAP' },
-    logo: logoHelioStream,
+    logo: logoAnsible,
   },
   {
     name: 'AIOps Incident Classification System',
     description:
       'End-to-end AIOps solution integrating Splunk, Dynatrace, and Azure Monitor for AI-powered incident classification and response. Implements alert correlation, noise reduction, and telemetry analysis with predictive analytics to dramatically improve system reliability and operational performance.',
     link: { href: '#', label: 'Splunk + Dynatrace' },
-    logo: logoCosmos,
+    logo: logoSplunk,
   },
   {
     name: 'Automated Configuration Backup System',
     description:
       'Daily automated configuration backups for 800+ network devices with intelligent retention policies (15-day rolling window). Includes automated lab device configuration restoration using Ansible, ensuring no changes are made when configurations match golden standards.',
     link: { href: '#', label: 'Python + Ansible' },
-    logo: logoOpenShuttle,
+    logo: logoCisco,
   },
 ]
 
