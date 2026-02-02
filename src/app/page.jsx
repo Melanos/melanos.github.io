@@ -174,8 +174,8 @@ function TechStack() {
 function Resume() {
   let resume = [
     {
-      company: 'Progressive',
-      title: 'Enterprise Automation Engineer',
+      company: 'Progressive Insurance',
+      title: 'IT DevOps Eng. Lead – AIOps & GenAI',
       logo: logoProgressive,
       start: '2020',
       end: {
@@ -184,7 +184,7 @@ function Resume() {
       },
     },
     {
-      company: 'Progressive',
+      company: 'ETS',
       title: 'AI Engineer',
       logo: logoProgressive,
       start: '2018',
