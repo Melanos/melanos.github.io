@@ -310,12 +310,12 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
                   icon={InstagramIcon}
                 />
                 <SocialLink
-                  href="https://github.com/Melanos#"
+                  href="https://github.com/Melanos"
                   aria-label="Follow on GitHub"
                   icon={GitHubIcon}
                 />
                 <SocialLink
-                  href="https://www.linkedin.com/in/igor-matsenko/#"
+                  href="https://linkedin.com/in/igor-m-20b625102"
                   aria-label="Follow on LinkedIn"
                   icon={LinkedInIcon}
                 />
