@@ -286,24 +286,6 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Igor, an enterprise automation engineer based in Ohio. I specialize in developing AI-powered automation solutions using Microsoft Power Automate, Copilot Studio, and Azure, helping organizations streamline their workflows and boost productivity.
           </p>
-          <div className="mt-6 flex gap-6">
-            {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
-            <SocialLink
-              href="https://www.instagram.com/nekapb_6yjio4ek/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com/Melanos#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/igor-matsenko/#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div>
         </div>
       </Container>
       {/* <Photos /> */}
@@ -317,6 +299,28 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <TechStack />
             <Newsletter />
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+              <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                <span className="ml-0">Connect</span>
+              </h2>
+              <div className="mt-6 flex gap-6">
+                <SocialLink
+                  href="https://www.instagram.com/nekapb_6yjio4ek/"
+                  aria-label="Follow on Instagram"
+                  icon={InstagramIcon}
+                />
+                <SocialLink
+                  href="https://github.com/Melanos#"
+                  aria-label="Follow on GitHub"
+                  icon={GitHubIcon}
+                />
+                <SocialLink
+                  href="https://www.linkedin.com/in/igor-matsenko/#"
+                  aria-label="Follow on LinkedIn"
+                  icon={LinkedInIcon}
+                />
+              </div>
+            </div>
             <Resume />
             <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
               <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
