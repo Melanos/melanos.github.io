@@ -1,0 +1,154 @@
+export const dynamic = 'force-static'
+
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Igor Matsenko',
+  date: '2026-02-17',
+  title: 'Building My Personal Telegram AI Assistant: From Prototype to Production',
+  description: 'How I built a feature-rich Telegram bot powered by Claude AI for task management, health tracking, and stock monitoring—deployed on Railway with SQLite.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+## The Challenge
+
+Managing personal productivity across multiple tools is exhausting. Task managers, habit trackers, stock portfolio apps—I was drowning in context switching. I wanted a single interface where I could:
+
+- Create tasks naturally: *"Remind me to call John tomorrow at 2pm"*
+- Track health metrics: *"I just did 30 minutes of cardio"*
+- Monitor stock prices: *"Alert me when IONQ hits $15"*
+- Have intelligent conversations
+
+So I built a personal Telegram bot powered by Claude AI.
+
+## Architecture Overview
+
+### Tech Stack
+- **Framework**: pyTelegramBotAPI (Python)
+- **AI**: Anthropic Claude API (natural language understanding)
+- **Database**: SQLite (self-hosted, 85% cost reduction vs PostgreSQL)
+- **Deployment**: Railway (persistent storage, auto-scaling)
+- **Infrastructure as Code**: Railway CLI
+
+### Current Features (v2.0.0)
+
+#### 📋 Task Management
+- Natural language parsing: *"Remind me to submit expense report Friday at 9am"*
+- Smart timeline recognition: "tomorrow", "in 30 minutes", "next Monday"
+- Persistent storage with auto-save
+- Interactive completion buttons
+
+#### 🏋️ Health Tracking
+- Protein logger with meal notes: `/protein 150 eggs for breakfast`
+- Workout tracker by type and duration: `/workout cardio 45`
+- Daily stats dashboard: Interactive metrics with trends
+- 7-day history with insights and patterns
+- Database statistics for tracking progress
+
+#### 📈 Stock Market Integration
+- Real-time price checking: `/stock AAPL`
+- Price alerts with directional triggers: `/alert IONQ 15 below`
+- Background monitoring every 5 minutes
+- Alert notifications when target prices hit
+- Persistent alert storage
+
+#### 🤖 AI-Powered Intelligence
+- Claude AI for intent recognition
+- Context-aware conversations with chat history
+- Multi-turn dialogue support
+- Fallback to general chat for non-task inquiries
+
+### Database Schema
+
+Migrated from PostgreSQL to SQLite for cost efficiency:
+
+```
+users          → store user profiles and preferences
+conversations  → chat history for context
+health         → protein, workouts, daily metrics
+preferences    → user settings and alert configurations
+insights       → calculated trends and patterns
+```
+
+## Development Journey
+
+### Phase 1: MVP (Task Management)
+Got basic task creation and listing working with Claude AI parsing. Learned pyTelegramBotAPI routing and Telegram's button API.
+
+### Phase 2: Stock Alerts
+Added real-time stock price monitoring, background tasks (APScheduler), and persistent JSON storage before moving to database.
+
+### Phase 3: Health Tracking & Database Infrastructure
+Implemented SQLite schema, migrated from PostgreSQL, added health tracking endpoints. Cut operational costs dramatically.
+
+Currently at **~800-1000 lines** of monolithic Python. Time to refactor.
+
+## Next Steps (Roadmap)
+
+### v1.1.5 - Code Refactoring (In Progress)
+Modularize into:
+- `handlers/` - Command handlers by feature
+- `services/` - API integrations and business logic
+- `utils/` - Shared utilities (parsing, formatting)
+- `models/` - Data structures
+
+Benefits: easier debugging, parallel development, unit testing, cleaner git history.
+
+### v1.2 - Voice Assistant
+- OpenAI Whisper API for speech-to-text
+- Voice commands: *"Remind me to call lawyer tomorrow at 2pm"*
+- Support all existing command types via voice
+
+### v2.0+ - AI Enhancements
+- Stock sentiment analysis
+- Conversation summarization
+- Predictive reminders based on patterns
+- Multi-user support with permission levels
+
+## Key Lessons Learned
+
+1. **SQLite > PostgreSQL for Personal Projects**: No managed database costs, full control, easier backup
+2. **Claude API is Powerful**: Intent recognition with minimal prompt engineering
+3. **Modular Architecture Matters Early**: Starting with clear structure saves refactoring time later
+4. **Railway is Perfect for This**: GitHub auto-deployment, environment secrets, persistent volumes—set it and forget it
+5. **Test in Telegram, Not Terminal**: Real Telegram interactions reveal UX issues immediately
+
+## How to Get Started
+
+```bash
+# Clone and setup
+git clone https://github.com/aeither/telegram-bot-python
+cd telegram-bot-python
+pip install uv
+uv sync
+
+# Configure .env
+TELEGRAM_BOT_TOKEN=your_token
+ANTHROPIC_API_KEY=your_api_key
+
+# Run locally
+uv run python -B main.py
+
+# Deploy on Railway
+railway init
+railway up
+```
+
+## Code Sample: Natural Language Task Parsing
+
+```python
+# User sends: "Remind me to call John tomorrow at 2pm"
+# Claude AI extracts intent, deadline, and creates task automatically
+```
+
+The bot is live and handling production traffic. Next month: voice commands. After that: open-source the modular version for other builders.
+
+---
+
+**Want to build something similar?** The modular refactor will be perfect for forking or extending. Follow the progress on [GitHub](https://github.com/aeither/telegram-bot-python).
